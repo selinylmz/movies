@@ -11,9 +11,17 @@ const Search = () => {
       dispatch(getMovies(e.target.value));
     }, 300);
   };
-
+  const inputStyle = {
+    display: "flex",
+    justifyContent: "center",
+    with: "100%",
+    marginBottom: "20px"
+  };
   return (
-    <input type="search" placeholder="placeholder" onKeyUp={getSeachResult} />
+    <div style={inputStyle}>
+      <input style={{ width: "100%", height: "35px" }} type="search" placeholder="Search for any movie..." onKeyUp={getSeachResult} />
+    </div>
+
   );
 };
 

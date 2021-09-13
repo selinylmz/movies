@@ -4,8 +4,13 @@ import Search from "../movies/components/Search";
 import Pagination from "../movies/components/Pagination";
 
 export const Home = () => {
+  const containerStyle = {
+
+    with: "100%",
+    margin: "0 20px"
+  };
   return (
-    <div>
+    <div style={containerStyle}>
       <Search />
       <List />
       <Pagination />
